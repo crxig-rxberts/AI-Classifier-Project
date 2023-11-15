@@ -1,0 +1,99 @@
+======== FAILED ========
+
+
+e0665714@MAC-Q0V74703C4 ai-model % python3 main.py
+Found 162080 images belonging to 2 classes.
+Found 20260 images belonging to 2 classes.
+Found 20259 images belonging to 2 classes.
+Training the model...
+Epoch 1/20
+154/154 [==============================] - 787s 5s/step - loss: 1.5070 - accuracy: 0.7026 - val_loss: 1.4464 - val_accuracy: 0.6177
+Epoch 2/20
+154/154 [==============================] - 773s 5s/step - loss: 1.1384 - accuracy: 0.8085 - val_loss: 1.1721 - val_accuracy: 0.7751
+Epoch 3/20
+154/154 [==============================] - 779s 5s/step - loss: 0.8871 - accuracy: 0.8513 - val_loss: 0.8972 - val_accuracy: 0.8755
+Epoch 4/20
+154/154 [==============================] - 788s 5s/step - loss: 0.6995 - accuracy: 0.8811 - val_loss: 0.7494 - val_accuracy: 0.7845
+Epoch 5/20
+154/154 [==============================] - 779s 5s/step - loss: 0.5668 - accuracy: 0.8989 - val_loss: 0.8340 - val_accuracy: 0.7410
+Epoch 6/20
+154/154 [==============================] - 774s 5s/step - loss: 0.4660 - accuracy: 0.9124 - val_loss: 0.4471 - val_accuracy: 0.8956
+Epoch 7/20
+154/154 [==============================] - 752s 5s/step - loss: 0.3931 - accuracy: 0.9203 - val_loss: 0.4356 - val_accuracy: 0.8802
+Epoch 8/20
+154/154 [==============================] - 766s 5s/step - loss: 0.3412 - accuracy: 0.9265 - val_loss: 0.5837 - val_accuracy: 0.8026
+Epoch 9/20
+154/154 [==============================] - 760s 5s/step - loss: 0.3047 - accuracy: 0.9299 - val_loss: 0.2838 - val_accuracy: 0.9315
+Epoch 10/20
+154/154 [==============================] - 762s 5s/step - loss: 0.2741 - accuracy: 0.9338 - val_loss: 0.2490 - val_accuracy: 0.9384
+Epoch 11/20
+154/154 [==============================] - 758s 5s/step - loss: 0.2499 - accuracy: 0.9368 - val_loss: 0.5350 - val_accuracy: 0.8109
+Epoch 12/20
+154/154 [==============================] - 756s 5s/step - loss: 0.2326 - accuracy: 0.9399 - val_loss: 0.2340 - val_accuracy: 0.9350
+Epoch 13/20
+154/154 [==============================] - 747s 5s/step - loss: 0.2177 - accuracy: 0.9422 - val_loss: 0.3045 - val_accuracy: 0.9008
+Epoch 14/20
+154/154 [==============================] - 758s 5s/step - loss: 0.2083 - accuracy: 0.9422 - val_loss: 0.3347 - val_accuracy: 0.8863
+Epoch 15/20
+154/154 [==============================] - 760s 5s/step - loss: 0.1962 - accuracy: 0.9458 - val_loss: 0.1741 - val_accuracy: 0.9522
+Epoch 16/20
+154/154 [==============================] - 761s 5s/step - loss: 0.1876 - accuracy: 0.9470 - val_loss: 0.1684 - val_accuracy: 0.9525
+Epoch 17/20
+154/154 [==============================] - 751s 5s/step - loss: 0.1790 - accuracy: 0.9485 - val_loss: 0.1593 - val_accuracy: 0.9538
+Epoch 18/20
+154/154 [==============================] - 749s 5s/step - loss: 0.1738 - accuracy: 0.9490 - val_loss: 0.1739 - val_accuracy: 0.9474
+Epoch 19/20
+154/154 [==============================] - 754s 5s/step - loss: 0.1672 - accuracy: 0.9515 - val_loss: 0.1566 - val_accuracy: 0.9517
+Epoch 20/20
+154/154 [==============================] - 759s 5s/step - loss: 0.1629 - accuracy: 0.9516 - val_loss: 0.1444 - val_accuracy: 0.9567
+33/33 [==============================] - 1s 39ms/step
+33/33 [==============================] - 1s 40ms/step
+33/33 [==============================] - 1s 37ms/step
+33/33 [==============================] - 1s 36ms/step
+33/33 [==============================] - 1s 35ms/step
+33/33 [==============================] - 1s 38ms/step
+33/33 [==============================] - 1s 37ms/step
+33/33 [==============================] - 1s 36ms/step
+33/33 [==============================] - 1s 37ms/step
+33/33 [==============================] - 1s 38ms/step
+33/33 [==============================] - 1s 36ms/step
+33/33 [==============================] - 1s 36ms/step
+33/33 [==============================] - 1s 36ms/step
+33/33 [==============================] - 1s 36ms/step
+33/33 [==============================] - 1s 36ms/step
+33/33 [==============================] - 1s 36ms/step
+33/33 [==============================] - 1s 37ms/step
+33/33 [==============================] - 1s 36ms/step
+33/33 [==============================] - 1s 36ms/step
+19/19 [==============================] - 23s 1s/step
+Traceback (most recent call last):
+  File "/Users/e0665714/code/ada/ai-classifier-project/ai-model/main.py", line 54, in <module>
+    model.train(data_generators['train'], data_generators['validation'], EPOCHS)
+  File "/Users/e0665714/code/ada/ai-classifier-project/ai-model/model.py", line 86, in train
+    'validation_auc_roc': roc_auc_score(y_true, self.model.predict(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/sklearn/utils/_param_validation.py", line 214, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/sklearn/metrics/_ranking.py", line 627, in roc_auc_score
+    return _average_binary_score(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/sklearn/metrics/_base.py", line 75, in _average_binary_score
+    return binary_metric(y_true, y_score, sample_weight=sample_weight)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/sklearn/metrics/_ranking.py", line 387, in _binary_roc_auc_score
+    fpr, tpr, _ = roc_curve(y_true, y_score, sample_weight=sample_weight)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/sklearn/utils/_param_validation.py", line 187, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/sklearn/metrics/_ranking.py", line 1095, in roc_curve
+    fps, tps, thresholds = _binary_clf_curve(
+                           ^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/sklearn/metrics/_ranking.py", line 808, in _binary_clf_curve
+    y_score = column_or_1d(y_score)
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/lib/python3.11/site-packages/sklearn/utils/validation.py", line 1244, in column_or_1d
+    raise ValueError(
+ValueError: y should be a 1d array, got an array of shape (19912, 2) instead.
+e0665714@MAC-Q0V74703C4 ai-model % 

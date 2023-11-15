@@ -1,0 +1,48 @@
+# Node modules and Yarn PnP
+/node_modules/
+/.pnp/
+.pnp.js
+
+# Package lock files
+package-lock.json
+yarn.lock
+
+# Compiled source
+/build/
+/dist/
+
+# Source data
+/data/archive/
+
+# Testing
+/coverage/
+
+# Environment files
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor directories and files
+.idea/
+.vscode/
+
+# Python virtual environments
+*/venv/
+*/env/
+
+# Python cache files
+__pycache__/
+*.py[cod]
+
+# Misc
+.DS_Store
+
+# Specific project directories
+*/partitioned-data/
+*/archive/

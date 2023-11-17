@@ -1,4 +1,4 @@
-# README.md for AI Image Classifier
+# README.md for ai-model
 
 ## Project Overview
 

@@ -1,4 +1,4 @@
-# README.md for AI Image Classifier React App
+# README.md for classifier-ui
 
 ## Project Overview
 
